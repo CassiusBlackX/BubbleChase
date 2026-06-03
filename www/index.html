@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>泡泡大作战</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game-canvas"></canvas>
+
+    <div id="loading">加载中...</div>
+
+    <div id="portrait-hint">
+      <p>请旋转设备至横屏模式</p>
+    </div>
+
+    <div id="desktop-hint" class="hidden">
+      <p>左键点击开始朝鼠标方向移动 · 再点左键停止 · 按住空格向鼠标排空</p>
+    </div>
+
+    <div id="mobile-hint" class="hidden">
+      <p>单指触摸移动 · 连续双击并长按排空</p>
+    </div>
+
+    <div id="mobile-controls" class="hidden">
+      <div id="joystick-base">
+        <div id="joystick-stick"></div>
+      </div>
+      <button id="expel-btn" type="button">排空</button>
+    </div>
+
+    <button id="restart-btn" class="hidden" type="button">重新开始</button>
+  </div>
+
+  <script type="module" src="js/host.js"></script>
+</body>
+</html>
